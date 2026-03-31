@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solarized Dark Colors</title>
+    <style>
+        body {
+            background: #002b36;
+            color: #839496;
+            font-family: monospace;
+            padding: 40px;
+        }
+        h1 { color: #93a1a1; }
+        h2 { color: #93a1a1; margin-top: 40px; }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 16px;
+            margin-top: 16px;
+        }
+        .swatch {
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .color-block {
+            height: 80px;
+        }
+        .label {
+            background: #073642;
+            padding: 10px 12px;
+            font-size: 14px;
+        }
+        .label .name {
+            font-weight: bold;
+            color: #93a1a1;
+        }
+        .label .hex {
+            color: #586e75;
+        }
+        .label .usage {
+            color: #586e75;
+            font-size: 12px;
+            margin-top: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Solarized Dark</h1>
+
+    <h2>Base Colors</h2>
+    <div class="grid">
+        <div class="swatch">
+            <div class="color-block" style="background: #002b36;"></div>
+            <div class="label">
+                <div class="name">base03 <span class="hex">#002b36</span></div>
+                <div class="usage">Main background</div>
+            </div>
+        </div>
+        <div class="swatch">
+            <div class="color-block" style="background: #073642;"></div>
+            <div class="label">
+                <div class="name">base02 <span class="hex">#073642</span></div>
+                <div class="usage">Highlighted background</div>
+            </div>
+        </div>
+        <div class="swatch">
+            <div class="color-block" style="background: #586e75;"></div>
+            <div class="label">
+                <div class="name">base01 <span class="hex">#586e75</span></div>
+                <div class="usage">Comments, secondary text</div>
+            </div>
+        </div>
+        <div class="swatch">
+            <div class="color-block" style="background: #657b83;"></div>
+            <div class="label">
+                <div class="name">base00 <span class="hex">#657b83</span></div>
+                <div class="usage">Body text (light mode)</div>
+            </div>
+        </div>
+        <div class="swatch">
+            <div class="color-block" style="background: #839496;"></div>
+            <div class="label">
+                <div class="name">base0 <span class="hex">#839496</span></div>
+                <div class="usage">Default body text</div>
+            </div>
+        </div>
+        <div class="swatch">
+            <div class="color-block" style="background: #93a1a1;"></div>
+            <div class="label">
+                <div class="name">base1 <span class="hex">#93a1a1</span></div>
+                <div class="usage">Emphasized text</div>
+            </div>
+        </div>
+        <div class="swatch">
+            <div class="color-block" style="background: #eee8d5;"></div>
+            <div class="label">
+                <div class="name">base2 <span class="hex">#eee8d5</span></div>
+                <div class="usage">Background (light mode)</div>
+            </div>
+        </div>
+        <div class="swatch">
+            <div class="color-block" style="background: #fdf6e3;"></div>
+            <div class="label">
+                <div class="name">base3 <span class="hex">#fdf6e3</span></div>
+                <div class="usage">Main background (light mode)</div>
+            </div>
+        </div>
+    </div>
+
+    <h2>Accent Colors</h2>
+    <div class="grid">
+        <div class="swatch">
+            <div class="color-block" style="background: #b58900;"></div>
+            <div class="label">
+                <div class="name">yellow <span class="hex">#b58900</span></div>
+                <div class="usage">Warnings, constants, numbers</div>
+            </div>
+        </div>
+        <div class="swatch">
+            <div class="color-block" style="background: #cb4b16;"></div>
+            <div class="label">
+                <div class="name">orange <span class="hex">#cb4b16</span></div>
+                <div class="usage">Types, declarations</div>
+            </div>
+        </div>
+        <div class="swatch">
+            <div class="color-block" style="background: #dc322f;"></div>
+            <div class="label">
+                <div class="name">red <span class="hex">#dc322f</span></div>
+                <div class="usage">Errors, deletions</div>
+            </div>
+        </div>
+        <div class="swatch">
+            <div class="color-block" style="background: #d33682;"></div>
+            <div class="label">
+                <div class="name">magenta <span class="hex">#d33682</span></div>
+                <div class="usage">Keywords, special</div>
+            </div>
+        </div>
+        <div class="swatch">
+            <div class="color-block" style="background: #6c71c4;"></div>
+            <div class="label">
+                <div class="name">violet <span class="hex">#6c71c4</span></div>
+                <div class="usage">Verbose, less important keywords</div>
+            </div>
+        </div>
+        <div class="swatch">
+            <div class="color-block" style="background: #268bd2;"></div>
+            <div class="label">
+                <div class="name">blue <span class="hex">#268bd2</span></div>
+                <div class="usage">Functions, identifiers</div>
+            </div>
+        </div>
+        <div class="swatch">
+            <div class="color-block" style="background: #2aa198;"></div>
+            <div class="label">
+                <div class="name">cyan <span class="hex">#2aa198</span></div>
+                <div class="usage">Strings, literals</div>
+            </div>
+        </div>
+        <div class="swatch">
+            <div class="color-block" style="background: #859900;"></div>
+            <div class="label">
+                <div class="name">green <span class="hex">#859900</span></div>
+                <div class="usage">Additions, success</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
