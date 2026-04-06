@@ -51,5 +51,5 @@ The user wants to extract and organize information from the current conversation
 ### Output
 
 7. Auto-generate a concise, descriptive filename in kebab-case based on the topic (e.g., `auth-design.md`, `react-state-management.md`). Check for filename conflicts in the target directory and append a version suffix if needed (e.g., `auth-design-v2.md`).
-8. Write to `/home/t/git-repos/kumestra.github.io/src/data/blog/<filename>.md`.
+8. Write to `/home/t/git-repos/kumestra.github.io/src/data/blog/<YYYYMM>/<MMDD>-<filename>.md`, where `YYYYMM` is the current year-month directory and `MMDD` is the current month-day prefix.
 9. Tell the user the file path and a brief summary of what was captured.
