@@ -5,21 +5,25 @@ STATUSLINE_TZ=${STATUSLINE_TZ:-Asia/Singapore}
 
 fmt_remain() {
   local reset_ts=$1
-  local now diff
+  local now diff d h m parts
 
   now=$(date +%s)
   diff=$(( reset_ts - now ))
 
   if (( diff <= 0 )); then
-    echo "soon"
-  elif (( diff < 3600 )); then
-    echo "$((diff / 60))m"
-  elif (( diff < 86400 )); then
-    echo "$((diff / 3600))h$(( (diff % 3600) / 60 ))m"
-  else
-    echo "$((diff / 86400))d$(( (diff % 86400) / 3600 ))h" \
-      "$(( (diff % 3600) / 60 ))m" | tr -d ' '
+    echo "0m"
+    return
   fi
+
+  d=$(( diff / 86400 ))
+  h=$(( (diff % 86400) / 3600 ))
+  m=$(( (diff % 3600) / 60 ))
+
+  parts=""
+  (( d > 0 )) && parts+="${d}d "
+  (( h > 0 )) && parts+="${h}hr "
+  (( m > 0 )) && parts+="${m}m"
+  echo "${parts% }"
 }
 
 fmt_reset_at() {
@@ -32,7 +36,7 @@ fmt_reset_at() {
 
   # In Bash, printing text is how a function "returns" a string result.
   if (( reset_ts < tomorrow_start )); then
-    echo "$(TZ="$STATUSLINE_TZ" date -d "@$reset_ts" '+%H:%M')"
+    echo "today $(TZ="$STATUSLINE_TZ" date -d "@$reset_ts" '+%H:%M')"
   else
     echo "$(TZ="$STATUSLINE_TZ" date -d "@$reset_ts" '+%a %H:%M')"
   fi
@@ -61,11 +65,14 @@ used=$(( (max * pct_int) / 100 ))
 used_k=$(( used / 1000 ))
 max_k=$(( max / 1000 ))
 
-output="🤖 $model | 🧠 ${used_k}k/${max_k}k ${pct_int}%"
+bar_width=16
+bar_filled=$(( (pct_int * bar_width) / 100 ))
+bar_empty=$(( bar_width - bar_filled ))
+bar="[$(printf '█%.0s' $(seq 1 $bar_filled 2>/dev/null))$(printf '░%.0s' $(seq 1 $bar_empty 2>/dev/null))]"
+output="🤖 $model | 🧠 $bar ${used_k}k/${max_k}k (${pct_int}%)"
 
 if [[ -n "$rl5h" ]]; then
-  output+=" | ⏱️ ${rl5h_int}% $(fmt_remain "$rl5h_resets")"
-  output+=" @ $(fmt_reset_at "$rl5h_resets")"
+  output+=" | ⏱️ ${rl5h_int}% $(fmt_reset_at "$rl5h_resets") ($(fmt_remain "$rl5h_resets"))"
   output+=" | 📅 ${rl7d_int}% $(fmt_remain "$rl7d_resets")"
   output+=" @ $(fmt_reset_at "$rl7d_resets")"
 fi
