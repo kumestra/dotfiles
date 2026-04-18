@@ -26,25 +26,10 @@ fmt_remain() {
   echo "${parts% }"
 }
 
-fmt_reset_at() {
-  local reset_ts=$1
-  local day_start tomorrow_start
-
-  # Compare the reset time against midnight in the display timezone.
-  day_start=$(TZ="$STATUSLINE_TZ" date -d 'today 00:00' +%s)
-  tomorrow_start=$(( day_start + 86400 ))
-
-  # In Bash, printing text is how a function "returns" a string result.
-  if (( reset_ts < tomorrow_start )); then
-    echo "today $(TZ="$STATUSLINE_TZ" date -d "@$reset_ts" '+%H:%M')"
-  else
-    echo "$(TZ="$STATUSLINE_TZ" date -d "@$reset_ts" '+%a %H:%M')"
-  fi
-}
 
 # Read one tab-separated line from jq into shell variables.
 IFS=$'\t' read -r \
-  model max pct rl5h rl5h_resets rl7d rl7d_resets \
+  model ctx_size ctx_pct block_pct block_resets_at weekly_pct weekly_resets_at \
   < <(jq -r '
   [
     (.model.display_name // "Unknown"),
@@ -57,24 +42,20 @@ IFS=$'\t' read -r \
   ] | @tsv
 ')
 
-pct_int=${pct%.*}
-rl5h_int=${rl5h%.*}
-rl7d_int=${rl7d%.*}
+ctx_pct_int=${ctx_pct%.*}
 
-used=$(( (max * pct_int) / 100 ))
-used_k=$(( used / 1000 ))
-max_k=$(( max / 1000 ))
+ctx_used_k=$(( (ctx_size * ctx_pct_int) / 100 / 1000 ))
+ctx_size_k=$(( ctx_size / 1000 ))
 
 bar_width=16
-bar_filled=$(( (pct_int * bar_width) / 100 ))
+bar_filled=$(( (ctx_pct_int * bar_width) / 100 ))
 bar_empty=$(( bar_width - bar_filled ))
 bar="[$(printf '█%.0s' $(seq 1 $bar_filled 2>/dev/null))$(printf '░%.0s' $(seq 1 $bar_empty 2>/dev/null))]"
-output="🤖 $model | 🧠 $bar ${used_k}k/${max_k}k (${pct_int}%)"
 
-if [[ -n "$rl5h" ]]; then
-  output+=" | ⏱️ ${rl5h_int}% $(fmt_reset_at "$rl5h_resets") ($(fmt_remain "$rl5h_resets"))"
-  output+=" | 📅 ${rl7d_int}% $(fmt_remain "$rl7d_resets")"
-  output+=" @ $(fmt_reset_at "$rl7d_resets")"
+echo "Model: $model | Context: $bar ${ctx_used_k}k/${ctx_size_k}k (${ctx_pct_int}%)"
+
+if [[ -n "$block_pct" ]]; then
+  printf "Session: %.1f%% | Reset: %s | Weekly: %.1f%% | Weekly Reset: %s\n" \
+    "$block_pct" "$(fmt_remain "$block_resets_at")" \
+    "$weekly_pct" "$(fmt_remain "$weekly_resets_at")"
 fi
-
-echo "$output"
