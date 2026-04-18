@@ -19,7 +19,7 @@ disable-model-invocation: true
 | **Date** | commit date |
 | **Author** | author name |
 | **Email** | author email |
-| **Message** | full commit message (subject, body, footers) |
+| **Message** | full commit message wrapped in `<pre>` tag to preserve formatting |
 | **Changed** | N files · +X −Y |
 | **Files** | list of changed filenames |
 | **Link** | full GitHub commit URL (construct from remote URL) |
