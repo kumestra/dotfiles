@@ -6,29 +6,7 @@ disable-model-invocation: true
 
 # Ship
 
-Stage all changes, verify no binary files are included, then commit and push.
-
-## Steps
-
-### 1. Stage
-
-Run `git add -A` to stage all changes in the working directory.
-
-### 2. Check for binary files
-
-Run `git diff --cached --numstat` and inspect the output. Binary files appear as lines starting with `-\t-\t` (two dashes instead of numbers).
-
-If any binary files are found:
-- List each binary file by name
-- Tell the user: "Staged changes include binary files — stopping. Please unstage them with `git restore --staged <file>` before shipping."
-- Stop. Do not proceed.
-
-### 3. Commit
-
-Review `git diff --cached` and compose an appropriate commit message.
-
-### 4. Push
-
-Run `git push`.
-
-Report the commit hash and pushed branch to the user.
+1. Stage all changes in the working directory.
+2. Check staged files for binaries. If any are found, list them and stop — do not commit or push.
+3. Review the staged diff and commit using Conventional Commits format.
+4. Push to remote, then give the user a report about this commit.
