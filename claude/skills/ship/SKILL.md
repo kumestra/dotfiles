@@ -12,16 +12,14 @@ disable-model-invocation: true
 4. Review the staged diff using `git diff --cached`, then commit using Conventional Commits format (see `conventional-commits.md`). The body is required — always include it. Always add yourself as co-author.
 5. Push to remote, then give the user a report in this table format:
 
-| | |
+| Field | Value |
 |---|---|
 | **Commit** | short hash (full hash) |
-| **Message** | commit message |
 | **Branch** | branch name |
+| **Date** | commit date |
 | **Author** | author name |
 | **Email** | author email |
-| **Date** | commit date |
+| **Message** | full commit message (subject, body, footers) |
 | **Changed** | N files · +X −Y |
 | **Files** | list of changed filenames |
 | **Link** | full GitHub commit URL (construct from remote URL) |
-| **Tags** | tag name if commit is tagged, omit row if not |
-| **Signed-off** | Yes / No |
