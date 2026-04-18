@@ -19,7 +19,9 @@ disable-model-invocation: true
 | **Date** | commit date |
 | **Author** | author name |
 | **Email** | author email |
-| **Message** | full commit message wrapped in `<pre>` tag to preserve formatting |
+| **Message** | commit subject line only |
 | **Changed** | N files · +X −Y |
 | **Files** | list of changed filenames |
 | **Link** | full GitHub commit URL (construct from remote URL) |
+
+Then print the full commit message (subject, body, footers) as a code block below the table.
