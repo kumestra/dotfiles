@@ -16,7 +16,7 @@ disable-model-invocation: true
 |---|---|
 | **Commit** | short hash (full hash) |
 | **Branch** | branch name |
-| **When** | UTC: `Sunday, April 19, 2026 at 2:30 PM UTC` · Beijing: `Sunday, April 19, 2026 at 10:30 PM` |
+| **When** | UTC: `Sunday, April 19, 2026 at 2:30 PM` · Beijing: `Sunday, April 19, 2026 at 10:30 PM` |
 | **Author** | author name |
 | **Email** | author email |
 | **Message** | commit subject line only |
