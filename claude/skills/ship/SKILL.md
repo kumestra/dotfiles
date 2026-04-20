@@ -25,3 +25,5 @@ disable-model-invocation: true
 | **Link** | full GitHub commit URL (construct from remote URL) |
 
 Then print the full commit message (subject, body, footers) as a code block below the table.
+
+6. If the commit includes any `.md` files, print a markdown bullet list below the code block where each item links to that file at the committed SHA on GitHub. Use the permalink form `https://github.com/<owner>/<repo>/blob/<full-sha>/<path>` (construct from the same remote used for the **Link** row and the full hash from the **Commit** row — never `blob/main`). Link text is the file path. For renames, use the post-commit path as reported by `git show --name-only`. If no `.md` files are in the commit, omit this section entirely.
