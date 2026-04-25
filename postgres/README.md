@@ -12,7 +12,7 @@ docker run --name my-postgres \
 
 ```bash
 docker run --name my-pgadmin \
-  -p 5050:5050 \
+  -p 5050:80 \
   -e 'PGADMIN_DEFAULT_EMAIL=user@domain.com'  \
   -e 'PGADMIN_DEFAULT_PASSWORD=123'   \
   dpage/pgadmin4
