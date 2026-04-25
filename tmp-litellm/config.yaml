@@ -1,0 +1,11 @@
+model_list:
+  - model_name: google/gemini-3-flash-preview
+    litellm_params:
+      model: openrouter/google/gemini-3-flash-preview
+      api_base: https://openrouter.ai/api/v1
+      api_key: "os.environ/OPEN_ROUTER_API_KEY"
+
+general_settings: 
+  master_key: sk-1234
+  database_url: "postgresql://test:123@192.168.1.156:5432/litellm"
+  store_prompts_in_spend_logs: true
