@@ -38,3 +38,9 @@ curl -X POST 'http://192.168.1.156:4000/chat/completions' \
     ]
 }'
 ```
+
+base url 
+
+```text
+http://192.168.1.156:4000
+```
