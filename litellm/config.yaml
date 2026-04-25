@@ -9,3 +9,5 @@ general_settings:
   master_key: sk-1234
   database_url: "postgresql://test:123@192.168.1.156:5432/litellm"
   store_prompts_in_spend_logs: true
+  maximum_spend_logs_retention_period: "3d"  # Delete logs older than 3 days
+  maximum_spend_logs_retention_interval: "1d"  # Run once per day

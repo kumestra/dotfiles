@@ -12,6 +12,7 @@ docker pull docker.litellm.ai/berriai/litellm:main-latest
 docker run \
     -v $(pwd)/config.yaml:/app/config.yaml \
     -e OPEN_ROUTER_API_KEY=sk-*********** \
+    -e MAX_STRING_LENGTH_PROMPT_IN_DB=10000000 \
     -p 4000:4000 \
     docker.litellm.ai/berriai/litellm:main-latest \
     --config /app/config.yaml --detailed_debug
