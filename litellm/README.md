@@ -1,7 +1,7 @@
 ## start
 
 ```bash
-docker exec -u postgres my-postgres createdb -O test litellm
+docker exec -it my-postgres psql -U test -c "CREATE DATABASE mydb;"
 ```
 
 ```bash
