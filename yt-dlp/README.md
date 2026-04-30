@@ -49,17 +49,27 @@ deno --version
 By default, yt-dlp tries to download the best available quality if you don't pass any options.
 
 ```bash
-yt-dlp --ffmpeg-location ~/yt-dlp-ffmpeg/ffmpeg-master-latest-linux64-gpl/bin "https://www.youtube.com/watch?v=XXXXXXXXXXX"
+yt-dlp \
+  --ffmpeg-location ~/yt-dlp-ffmpeg/ffmpeg-master-latest-linux64-gpl/bin \
+  --embed-chapters \
+  --embed-metadata \
+  "https://www.youtube.com/watch?v=XXXXXXXXXXX"
 ```
 
 List available subtitles of each video:
 
 ```bash
-yt-dlp --ffmpeg-location ~/yt-dlp-ffmpeg/ffmpeg-master-latest-linux64-gpl/bin --list-subs "https://www.youtube.com/watch?v=XXXXXXXXXXX"
+yt-dlp \
+  --ffmpeg-location ~/yt-dlp-ffmpeg/ffmpeg-master-latest-linux64-gpl/bin \
+  --list-subs \
+  "https://www.youtube.com/watch?v=XXXXXXXXXXX"
 ```
 
 List available formats of each video:
 
 ```bash
-yt-dlp --ffmpeg-location ~/yt-dlp-ffmpeg/ffmpeg-master-latest-linux64-gpl/bin --list-formats "https://www.youtube.com/watch?v=XXXXXXXXXXX"
+yt-dlp \
+  --ffmpeg-location ~/yt-dlp-ffmpeg/ffmpeg-master-latest-linux64-gpl/bin \
+  --list-formats \
+  "https://www.youtube.com/watch?v=XXXXXXXXXXX"
 ```
