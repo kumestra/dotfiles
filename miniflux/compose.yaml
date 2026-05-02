@@ -12,21 +12,15 @@ services:
       - CREATE_ADMIN=1
       - ADMIN_USERNAME=admin
       - ADMIN_PASSWORD=test123
+      - FETCHER_ALLOW_PRIVATE_NETWORKS=1
+      - POLLING_FREQUENCY=240
   db:
     image: postgres:18
     environment:
       - POSTGRES_USER=miniflux
       - POSTGRES_PASSWORD=secret
       - POSTGRES_DB=miniflux
-    volumes:
-      # You may have to adjust the volume path depending on the version of Postgres
-      # Postgres 18 uses /var/lib/postgresql
-      # Postgres 17 and below uses /var/lib/postgresql/data
-      # See https://hub.docker.com/_/postgres#pgdata
-      - miniflux-db:/var/lib/postgresql
     healthcheck:
       test: ["CMD", "pg_isready", "-U", "miniflux"]
       interval: 10s
       start_period: 30s
-volumes:
-  miniflux-db:
