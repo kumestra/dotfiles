@@ -1,8 +1,6 @@
 ## start
 
-```bash
-docker exec -it my-postgres psql -U test -c "CREATE DATABASE mydb;"
-```
+
 
 ```bash
 docker pull docker.litellm.ai/berriai/litellm:main-latest
@@ -11,8 +9,10 @@ docker pull docker.litellm.ai/berriai/litellm:main-latest
 ```bash
 docker run \
     -v $(pwd)/config.yaml:/app/config.yaml \
-    -e OPEN_ROUTER_API_KEY=sk-*********** \
-    -e MAX_STRING_LENGTH_PROMPT_IN_DB=10000000 \
+    -e OPEN_ROUTER_API_KEY=sk-**** \
+    -e LANGFUSE_PUBLIC_KEY="pk-lf-****" \
+    -e LANGFUSE_SECRET_KEY="sk-lf-****" \
+    -e LANGFUSE_HOST="https://cloud.langfuse.com" \
     -p 4000:4000 \
     docker.litellm.ai/berriai/litellm:main-latest \
     --config /app/config.yaml --detailed_debug
@@ -46,14 +46,4 @@ base url
 http://192.168.1.156:4000
 ```
 
-```bash
-docker run \
-    -v $(pwd)/config.yaml:/app/config.yaml \
-    -e OPEN_ROUTER_API_KEY=sk-**** \
-    -e LANGFUSE_PUBLIC_KEY="pk-lf-****" \
-    -e LANGFUSE_SECRET_KEY="sk-lf-****" \
-    -e LANGFUSE_HOST="https://cloud.langfuse.com" \
-    -p 4000:4000 \
-    docker.litellm.ai/berriai/litellm:main-latest \
-    --config /app/config.yaml --detailed_debug
-```
+
