@@ -13,7 +13,6 @@ services:
       - ADMIN_USERNAME=admin
       - ADMIN_PASSWORD=test123
       - FETCHER_ALLOW_PRIVATE_NETWORKS=1
-      - POLLING_FREQUENCY=240
   db:
     image: postgres:18
     environment:
