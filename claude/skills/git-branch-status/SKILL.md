@@ -1,5 +1,5 @@
 ---
-name: branch-status
+name: git-branch-status
 description: Show comprehensive status of the current git branch
 disable-model-invocation: true
 ---
