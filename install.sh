@@ -10,4 +10,12 @@ else
     echo "tmux symlink created success"
 fi
 
+# vim
+if [ -e "$HOME/.vimrc" ] || [ -L "$HOME/.vimrc" ]; then
+    echo "~/.vimrc already exists, please remove it first."
+else
+    ln -sf "$DOTFILES_DIR/vim/.vimrc" "$HOME/.vimrc"
+    echo "vim symlink created success"
+fi
+
 echo "finish"
