@@ -20,6 +20,13 @@ docker run \
 ```
 
 
+## stop
+
+```bash
+docker rm -f litellm
+```
+
+
 ## test
 
 ```bash
