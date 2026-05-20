@@ -1,12 +1,8 @@
-# Bilibili Video Summarization
-
-## Download subtitles
+## Download subtitle of the video
 
 ```bash
 yt-dlp --cookies cookie.txt --write-subs --write-auto-subs --skip-download --sub-langs "zh.*,en.*" <url>
 ```
-
-### What each flag means
 
 - **`yt-dlp`** — the tool itself.
 - **`--cookies cookie.txt`** — pass a logged-in session via a Netscape/Mozilla format cookies file. Many Bilibili videos (member-only, 1080p+, region-locked) require login, or you'll get lower-quality streams or fail entirely.
@@ -16,16 +12,14 @@ yt-dlp --cookies cookie.txt --write-subs --write-auto-subs --skip-download --sub
 - **`--sub-langs "zh.*,en.*"`** — which languages to grab. `zh.*` matches any Chinese variant (`zh`, `zh-CN`, `zh-Hans`, etc.), `en.*` matches English variants. The `.*` is a wildcard pattern.
 - **`<url>`** — replace with the actual Bilibili video URL, e.g. `https://www.bilibili.com/video/BV1xx411c7mD`.
 
-### Output
 
-After running, you'll get a file like `VideoTitle.zh-CN.vtt` in the current directory. The `.vtt` format looks like:
+## Download audio of the video
 
-```
-00:00:01.000 --> 00:00:04.000
-大家好，欢迎来到这个视频
-
-00:00:04.000 --> 00:00:07.000
-今天我们来聊聊...
+```bash
+yt-dlp --cookies cookie.txt -x --audio-format mp3 <url>
 ```
 
-Strip the timestamps (keep only the text lines) before sending to the LLM.
+- **Dropped** `--write-subs --write-auto-subs --skip-download --sub-langs` — no subtitles to fetch.
+- **Added** `-x` (short for `--extract-audio`) — after downloading, strip out and keep only the audio stream.
+- **Added** `--audio-format mp3` — convert to MP3. You could also use `m4a`, `wav`, `opus`, etc. MP3 is the safest choice for Whisper compatibility.
+
