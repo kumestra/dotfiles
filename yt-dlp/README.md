@@ -76,7 +76,7 @@ yt-dlp \
 
 ## Download (Bilibili)
 
-## Download subtitle of the video
+### Download subtitle of the video
 
 ```bash
 yt-dlp --cookies cookie.txt --write-subs --write-auto-subs --skip-download --sub-langs "zh.*,en.*" <url>
@@ -91,7 +91,7 @@ yt-dlp --cookies cookie.txt --write-subs --write-auto-subs --skip-download --sub
 - **`<url>`** — replace with the actual Bilibili video URL, e.g. `https://www.bilibili.com/video/BV1xx411c7mD`.
 
 
-## Download audio of the video
+### Download audio of the video
 
 ```bash
 yt-dlp --cookies cookie.txt -x --audio-format mp3 <url>
