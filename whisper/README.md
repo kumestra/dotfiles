@@ -2,3 +2,7 @@ https://github.com/kumestra/kumestra.github.io/blob/main/src/data/blog/2026/05/2
 
 
 
+## whisper.cpp
+
+https://github.com/ggml-org/whisper.cpp
+
