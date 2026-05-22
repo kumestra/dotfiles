@@ -22,5 +22,14 @@ cmake --version
 
 ### Model
 
+https://huggingface.co/ggerganov/whisper.cpp
+
 #### ggml-large-v3-turbo-q5_0.bin
+
+```bash
+aria2c -x 16 -s 16 https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-large-v3-turbo-q5_0.bin
+```
+
+- `-x 16` (`--max-connection-per-server=16`): open up to 16 parallel connections to the same server.
+- `-s 16` (`--split=16`): split the file into 16 segments and download them concurrently.
 
