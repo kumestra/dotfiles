@@ -59,6 +59,8 @@ aria2c -x 16 -s 16 https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggm
 
 ## Use
 
+### convert mp3 to wav
+
 whisper.cpp requires 16 kHz mono PCM WAV input, so convert the source audio with ffmpeg first:
 
 ```bash
