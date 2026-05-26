@@ -38,11 +38,11 @@ curl -X POST 'http://192.168.1.156:4000/chat/completions' \
     "messages": [
       {
         "role": "system",
-        "content": "You are an LLM named gpt-4o"
+        "content": "You are a helpful AI assistant. Answer with emojis."
       },
       {
         "role": "user",
-        "content": "intro harry potter"
+        "content": "Introduce Harry Potter."
       }
     ]
 }'
