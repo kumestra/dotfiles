@@ -5,9 +5,10 @@ Check if AppArmor restricts unprivileged user namespaces:
 
 ```bash
 cat /proc/sys/kernel/apparmor_restrict_unprivileged_userns
-# 1 = restricted (bwrap will fail)
-# 0 = allowed
 ```
+1 = restricted (bwrap will fail)
+
+0 = allowed
 
 Enable temporarily (resets on reboot):
 
