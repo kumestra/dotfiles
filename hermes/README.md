@@ -6,6 +6,8 @@
 
 [Official Docs](https://hermes-agent.nousresearch.com/docs/)
 
+[OpenRouter Hermes Agent](https://openrouter.ai/apps/hermes-agent)
+
 ## Docker
 
 Download Docker image:
