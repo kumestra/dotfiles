@@ -2,9 +2,7 @@
   "recommendations": [
     "eamodio.gitlens",
     "ritwickdey.LiveServer",
-    "bierner.markdown-mermaid",
     "bierner.markdown-footnotes",
-    "bierner.markdown-yaml-preamble",
     "bierner.markdown-emoji",
     "bierner.markdown-checkbox",
     "ms-python.python"
