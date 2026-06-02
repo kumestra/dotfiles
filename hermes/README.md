@@ -47,3 +47,14 @@ docker run -it --rm \
   -v /home/t/git-repos/dotfiles/hermes/hermes-docker-config:/opt/data \
   nousresearch/hermes-agent
 ```
+
+Gateway
+
+```bash
+docker run \
+  --name hermes \
+  --restart unless-stopped \
+  -v /home/t/git-repos/dotfiles/hermes/hermes-docker-config:/opt/data \
+  -p 8642:8642 \
+  nousresearch/hermes-agent gateway run
+```
