@@ -6,16 +6,24 @@
 
 [Official Docs](https://hermes-agent.nousresearch.com/docs/)
 
-## Get Docker Image
+## Docker
+
+Download Docker image:
 
 ```bash
-docker pull dockerproxy.net/nousresearch/hermes-agent:latest
+docker pull nousresearch/hermes-agent:latest
 ```
 
-```bash
-docker tag dockerproxy.net/nousresearch/hermes-agent:latest nousresearch/hermes-agent:latest
-```
+Package up image:
 
 ```bash
-docker rmi dockerproxy.net/nousresearch/hermes-agent:latest
+docker save -o hermes-agent-latest.tar nousresearch/hermes-agent:latest
+```
+
+Move tar file somewhere safe.
+
+Load the image:
+
+```bash
+docker load -i hermes-agent-latest.tar
 ```
