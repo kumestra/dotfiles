@@ -27,3 +27,13 @@ Load the image:
 ```bash
 docker load -i hermes-agent-latest.tar
 ```
+
+
+
+
+
+```bash
+docker run -it --rm \
+  -v /home/t/git-repos/dotfiles/hermes/hermes-docker-config:/opt/data \
+  nousresearch/hermes-agent setup
+```
