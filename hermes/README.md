@@ -58,3 +58,11 @@ docker run \
   -p 8642:8642 \
   nousresearch/hermes-agent gateway run
 ```
+
+```bash
+sudo chown -R t:t /home/t/git-repos/hermes-config/docker-config
+```
+
+```bash
+chmod -R u+rwX,go-rwx /home/t/git-repos/hermes-config/docker-config
+```
