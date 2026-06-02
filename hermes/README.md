@@ -32,10 +32,18 @@ docker load -i hermes-agent-latest.tar
 
 
 
-
+Setup
 
 ```bash
 docker run -it --rm \
   -v /home/t/git-repos/dotfiles/hermes/hermes-docker-config:/opt/data \
   nousresearch/hermes-agent setup
+```
+
+TUI Chat
+
+```bash
+docker run -it --rm \
+  -v /home/t/git-repos/dotfiles/hermes/hermes-docker-config:/opt/data \
+  nousresearch/hermes-agent
 ```
