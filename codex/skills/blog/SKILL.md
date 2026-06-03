@@ -39,6 +39,7 @@ Use the topic from the user's request. If the user did not provide a topic, stop
    tags: [<relevant tags>]
    ---
    ```
+   Generate exactly these four frontmatter fields and no others: `title`, `description`, `pubDatetime`, and `tags`. Do not add, infer, or include any additional frontmatter fields.
 
 6. Use Markdown features only when they make the document clearer:
    - Tables for comparison or structured data
