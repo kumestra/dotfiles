@@ -101,3 +101,6 @@ yt-dlp --cookies cookie.txt -x --audio-format mp3 <url>
 - **Added** `-x` (short for `--extract-audio`) — after downloading, strip out and keep only the audio stream.
 - **Added** `--audio-format mp3` — convert to MP3. You could also use `m4a`, `wav`, `opus`, etc. MP3 is the safest choice for Whisper compatibility.
 
+## 抖音
+
+[抖音视频下载工具怎么选：douyin-downloader 与 Douyin_TikTok_Download_API 对比](https://github.com/kumestra/kumestra.github.io/blob/main/src/data/blog/2026/06/2026-06-09-douyin-video-download-tools.md)
