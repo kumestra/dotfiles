@@ -47,6 +47,7 @@ Use the topic from the user's request. If the user did not provide a topic, stop
    - Task lists for actionable checklists
    - Fenced code blocks with language identifiers for code or diagrams
    - Mermaid diagrams when a diagram helps explain structure, flow, or relationships
+   - LaTeX math when formulas or notation are clearer than prose and the target renderer supports it
    - Link references, heading anchors, or footnotes when they improve navigation or sourcing
 
 7. Generate a concise filename in kebab-case from the topic, such as `auth-design.md` or `react-state-management.md`.
