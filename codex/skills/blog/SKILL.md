@@ -42,13 +42,14 @@ Use the topic from the user's request. If the user did not provide a topic, stop
    Generate exactly these four frontmatter fields and no others: `title`, `description`, `pubDatetime`, and `tags`. Do not add, infer, or include any additional frontmatter fields.
    Always double-quote the `title` and `description` values, even for simple text. Escape any double quotes inside those values.
 
-6. Use Markdown features only when they make the document clearer:
+6. The article will be read on GitHub, so freely use GitHub-supported Markdown features when they improve quality, clarity, structure, or readability:
    - Tables for comparison or structured data
    - Task lists for actionable checklists
-   - Fenced code blocks with language identifiers for code or diagrams
-   - Mermaid diagrams when a diagram helps explain structure, flow, or relationships
-   - LaTeX math when formulas or notation are clearer than prose and the target renderer supports it
-   - Link references, heading anchors, or footnotes when they improve navigation or sourcing
+   - Fenced code blocks with language identifiers for code, commands, config, or diagrams
+   - Mermaid diagrams for structure, flow, systems, or relationships
+   - LaTeX math for formulas or notation when clearer than prose
+   - Link references, heading anchors, and footnotes for navigation or sourcing
+   - Emoji when they add useful tone, scannability, or emphasis without making the article feel noisy
 
 7. Generate a concise filename in kebab-case from the topic, such as `auth-design.md` or `react-state-management.md`.
 
