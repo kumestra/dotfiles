@@ -23,10 +23,10 @@ docker run \
 ## convert
 
 ```bash
-curl --silent --show-error --output "converted.yml" --get \
+curl --silent --show-error --output "clash-config.yml" --get \
     "http://127.0.0.1:25500/sub" \
     --data-urlencode "target=clash" \
-    --data-urlencode "url=http://192.168.1.156:8001/clashconfig.txt" \
+    --data-urlencode "url=http://192.168.1.156:8001/clash-base64.txt" \
     --data-urlencode "insert=false" \
     --data-urlencode "config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_AdblockPlus.ini"
 ```
