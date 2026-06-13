@@ -22,6 +22,12 @@ Enable permanently:
 echo "kernel.apparmor_restrict_unprivileged_userns=0" | sudo tee /etc/sysctl.d/99-userns.conf
 ```
 
+Install bubblewrap
+
+```bash
+sudo apt install -y bubblewrap
+```
+
 ## blog skill
 
 ### github markdown feature
