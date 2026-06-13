@@ -13,7 +13,13 @@ Use the topic from the user's request. If the user did not provide a topic, stop
 
 ## Workflow
 
-1. Read the available conversation context and extract information relevant to the topic.
+1. Read only the available conversation context and extract information relevant to the topic.
+   Treat the conversation as the source of truth for article content. Do not add
+   facts, examples, motivations, recommendations, background context, or
+   conclusions that are not present in the conversation unless the user
+   explicitly asks for outside context. If the conversation does not contain
+   enough information for a useful post, stop and ask for more context instead
+   of filling gaps.
 
 2. Apply the privacy rule strictly. Never include personal user data, names, gender, age, passwords, API keys, tokens, email addresses, phone numbers, addresses, or other private or sensitive information. Omit sensitive details entirely rather than masking them.
 
