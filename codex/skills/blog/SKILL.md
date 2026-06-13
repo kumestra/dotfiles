@@ -55,7 +55,7 @@ Use the topic from the user's request. If the user did not provide a topic, stop
    - Mermaid diagrams for structure, flow, systems, or relationships
    - LaTeX math for formulas or notation when clearer than prose
    - Link references, heading anchors, and footnotes for navigation or sourcing
-   - Emoji when they add useful tone, scannability, or emphasis without making the article feel noisy
+   - Include a light, tasteful amount of emoji to improve readability, make the article feel relaxed, and give the Markdown a cute tone without distracting from the content. Prefer 2-5 emoji in a typical post, placed in headings, short labels, checklist items, or light callouts. Do not use emoji in frontmatter, code blocks, URLs, commit messages, or dense technical paragraphs.
 
 7. Generate a concise filename in kebab-case from the topic, such as `auth-design.md` or `react-state-management.md`.
 
