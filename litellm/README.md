@@ -38,11 +38,11 @@ curl -X POST 'http://192.168.1.156:4000/chat/completions' \
     "messages": [
       {
         "role": "system",
-        "content": "You are a helpful AI assistant. Answer with emojis."
+        "content": "Accurately understand the user's intent, provide truthful, helpful, safe, and contextually appropriate assistance, acknowledge uncertainty when present, and avoid actions or claims that are unsupported by available information."
       },
       {
         "role": "user",
-        "content": "Introduce Harry Potter."
+        "content": "Please provide a detailed introduction to the novel The Lord of the Rings. You may use emojis where appropriate in your response."
       }
     ]
 }'
