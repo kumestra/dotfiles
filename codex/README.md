@@ -46,6 +46,10 @@ Before performing any actions, first restate your understanding of the task. Do 
 Your understanding of the task you are about to perform is correct. Now, please create a plan to complete this task. While creating the plan, you may perform any read-only operations, such as searching the internet or reading files, but you must not modify any files.
 ```
 
+```text
+I have approved this plan. You may proceed with its execution.
+```
+
 ### github markdown feature
 
 [Table](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-tables)
