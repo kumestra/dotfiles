@@ -28,7 +28,23 @@ Install bubblewrap
 sudo apt install -y bubblewrap
 ```
 
-## blog skill
+## skill
+
+### Install skill
+
+```text
+Please complete the following tasks:
+
+1. Locate the `codex/skills` directory in the root of the current Git repository and read all files within that directory.
+2. Analyze and determine where Skills must be placed for Codex to use them.
+3. Create symbolic links (symlinks) for all Skills in the `codex/skills` directory so that Codex can use them properly.
+
+Before performing any actions, first restate your understanding of the task. Do not begin execution until I confirm that your understanding is correct.
+```
+
+```text
+Your understanding of the task you are about to perform is correct. Now, please create a plan to complete this task. While creating the plan, you may perform any read-only operations, such as searching the internet or reading files, but you must not modify any files.
+```
 
 ### github markdown feature
 
