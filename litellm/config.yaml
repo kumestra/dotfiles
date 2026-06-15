@@ -1,4 +1,29 @@
 model_list:
+  - model_name: google/gemini-3-flash-preview # Context length: 1,048,576
+    litellm_params:
+      model: openrouter/google/gemini-3-flash-preview
+      api_base: https://openrouter.ai/api/v1
+      api_key: "os.environ/OPEN_ROUTER_API_KEY"
+  - model_name: deepseek/deepseek-v4-pro # Context length: 1M
+    litellm_params:
+      model: openrouter/deepseek/deepseek-v4-pro
+      api_base: https://openrouter.ai/api/v1
+      api_key: "os.environ/OPEN_ROUTER_API_KEY"
+  - model_name: deepseek/deepseek-v4-flash # Context length: 1M
+    litellm_params:
+      model: openrouter/deepseek/deepseek-v4-flash
+      api_base: https://openrouter.ai/api/v1
+      api_key: "os.environ/OPEN_ROUTER_API_KEY"
+  - model_name: minimax/minimax-m3 # Context length: 1M
+    litellm_params:
+      model: openrouter/minimax/minimax-m3
+      api_base: https://openrouter.ai/api/v1
+      api_key: "os.environ/OPEN_ROUTER_API_KEY"
+  - model_name: tencent/hy3-preview # Context length: 262K
+    litellm_params:
+      model: openrouter/tencent/hy3-preview
+      api_base: https://openrouter.ai/api/v1
+      api_key: "os.environ/OPEN_ROUTER_API_KEY"
   - model_name: "*"
     litellm_params:
       model: "openrouter/*"
