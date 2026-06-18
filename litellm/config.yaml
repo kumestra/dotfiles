@@ -24,6 +24,11 @@ model_list:
       model: openrouter/tencent/hy3-preview
       api_base: https://openrouter.ai/api/v1
       api_key: "os.environ/OPEN_ROUTER_API_KEY"
+  - model_name: anthropic/claude-opus-4.8 # Context length: 1M
+    litellm_params:
+      model: openrouter/anthropic/claude-opus-4.8
+      api_base: https://openrouter.ai/api/v1
+      api_key: "os.environ/OPEN_ROUTER_API_KEY"
   - model_name: "*"
     litellm_params:
       model: "openrouter/*"
