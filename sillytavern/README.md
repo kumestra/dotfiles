@@ -59,3 +59,16 @@ Rules:
 - Do not omit the Chinese translation.
 - Do not explain this rule unless asked.
 ```
+
+## Single Docker command which is generated from docker compose file
+
+```bash
+docker run \
+  --name sillytavern \
+  -p 8000:8000 \
+  -e NODE_ENV=production \
+  -e FORCE_COLOR=1 \
+  -e SILLYTAVERN_HEARTBEATINTERVAL=30 \
+  -e 'SILLYTAVERN_WHITELIST=["0.0.0.0/0", "::/0"]' \
+  ghcr.nju.edu.cn/sillytavern/sillytavern:latest
+```
