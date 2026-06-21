@@ -14,3 +14,5 @@ docker run \
    -e OPENAI_API_KEY="sk-1234" \
    ghcr.nju.edu.cn/open-webui/open-webui:main
 ```
+
+2 setting `Always Expand Details` and `Follow-Up Auto-Generation`
