@@ -72,3 +72,7 @@ docker run \
   -e 'SILLYTAVERN_WHITELIST=["0.0.0.0/0", "::/0"]' \
   ghcr.nju.edu.cn/sillytavern/sillytavern:latest
 ```
+
+## References
+
+[SillyTavern 角色卡格式简明指南](https://github.com/kumestra/kumestra.github.io/blob/main/src/data/blog/2026/06/2026-06-21-sillytavern-character-cards.md)
