@@ -61,37 +61,8 @@ Use the topic from the user's request. If the user did not provide a topic, stop
 
 8. Write the post to:
    ```text
-   /home/t/git-repos/kumestra.github.io/src/data/blog/<YYYY>/<MM>/<YYYY-MM-DD>-<filename>.md
+   /home/t/git-repos/probable-guide/blog/<YYYY>/<MM>/<YYYY-MM-DD>-<filename>.md
    ```
    Create the year and month directories if needed. If the filename already exists, append a version suffix such as `-v2`.
 
 9. If sandbox permissions block writing to the blog repository, request approval to write the specific target file or directory. Do not write to a different location unless the user asks.
-
-10. Publish the generated post from the blog repository:
-    ```bash
-    cd /home/t/git-repos/kumestra.github.io
-    git rev-parse --is-inside-work-tree
-    git add -- src/data/blog/<YYYY>/<MM>/<YYYY-MM-DD>-<filename>.md
-    git diff --cached --quiet -- src/data/blog/<YYYY>/<MM>/<YYYY-MM-DD>-<filename>.md
-    ```
-    If the staged diff check succeeds, stop and tell the user there is no generated post change to commit.
-
-11. Review only the staged generated post before committing:
-    ```bash
-    git diff --cached --stat -- src/data/blog/<YYYY>/<MM>/<YYYY-MM-DD>-<filename>.md
-    git diff --cached -- src/data/blog/<YYYY>/<MM>/<YYYY-MM-DD>-<filename>.md
-    ```
-    If unrelated files are already staged, do not include them. Commit only the generated post path.
-
-12. Commit the generated post with a Conventional Commit-style message:
-    ```bash
-    git commit -m "docs(blog): add <kebab-case topic> post" -m "Capture the requested conversation knowledge as a published blog post." -m "Co-authored-by: Codex <codex@openai.com>" -- src/data/blog/<YYYY>/<MM>/<YYYY-MM-DD>-<filename>.md
-    ```
-    Use a concise subject that matches the post topic. The body is required and must explain what changed and why.
-
-13. Push the commit:
-    - If the branch has an upstream, run `git push`.
-    - If the branch has no upstream, run `git push -u origin HEAD`.
-    - If network sandboxing blocks the push, request approval and retry the same push command.
-
-14. After pushing, report the generated file path, commit hash, branch, GitHub commit URL when available, and a brief summary of what was captured.
