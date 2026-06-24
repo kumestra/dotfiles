@@ -11,9 +11,9 @@ docker run \
     --name litellm \
     -v $(pwd)/config.yaml:/app/config.yaml \
     -e OPEN_ROUTER_API_KEY="sk-****" \
+    -e LANGFUSE_HOST="https://cloud.langfuse.com" \
     -e LANGFUSE_SECRET_KEY="sk-lf-****" \
     -e LANGFUSE_PUBLIC_KEY="pk-lf-****" \
-    -e LANGFUSE_HOST="https://cloud.langfuse.com" \
     -p 4000:4000 \
     docker.litellm.ai/berriai/litellm:main-latest \
     --config /app/config.yaml --detailed_debug
