@@ -1,8 +1,8 @@
-# yt-dlp
+## yt-dlp
 
 https://github.com/yt-dlp/yt-dlp
 
-## Install
+### Install
 
 ```bash
 sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp_linux -o /usr/local/bin/yt-dlp
@@ -16,7 +16,7 @@ sudo chmod a+rx /usr/local/bin/yt-dlp
 yt-dlp --version
 ```
 
-## ffmpeg
+### ffmpeg
 
 https://github.com/yt-dlp/FFmpeg-Builds
 
@@ -30,7 +30,7 @@ curl -L \
 tar -xf ffmpeg-master-latest-linux64-gpl.tar.xz
 ```
 
-## Deno
+### Deno
 
 https://github.com/denoland/deno
 
@@ -44,7 +44,7 @@ Verify:
 deno --version
 ```
 
-## Download (YouTube)
+### Download (YouTube)
 
 By default, yt-dlp tries to download the best available quality if you don't pass any options.
 
@@ -74,9 +74,9 @@ yt-dlp \
   "https://www.youtube.com/watch?v=XXXXXXXXXXX"
 ```
 
-## Download (Bilibili)
+### Download (Bilibili)
 
-### Download subtitle of the video
+#### Download subtitle of the video
 
 ```bash
 yt-dlp --cookies cookie.txt --write-subs --write-auto-subs --skip-download --sub-langs "zh.*,en.*" <url>
@@ -91,7 +91,7 @@ yt-dlp --cookies cookie.txt --write-subs --write-auto-subs --skip-download --sub
 - **`<url>`** — replace with the actual Bilibili video URL, e.g. `https://www.bilibili.com/video/BV1xx411c7mD`.
 
 
-### Download audio of the video
+#### Download audio of the video
 
 ```bash
 yt-dlp --cookies cookie.txt -x --audio-format mp3 <url>
@@ -104,3 +104,42 @@ yt-dlp --cookies cookie.txt -x --audio-format mp3 <url>
 ## 抖音
 
 [抖音视频下载工具怎么选：douyin-downloader 与 Douyin_TikTok_Download_API 对比](https://github.com/kumestra/kumestra.github.io/blob/main/src/data/blog/2026/06/2026-06-09-douyin-video-download-tools.md)
+
+```bash
+uv venv --python 3.12
+```
+
+```bash
+uv pip install -r requirements.txt
+```
+
+```bash
+uv pip install playwright
+```
+
+```bash
+uv run playwright install chromium
+```
+
+```bash
+cp config.example.yml config.yml
+```
+
+```bash
+uv run python -m tools.cookie_fetcher --config config.yml
+```
+
+```bash
+uv run python run.py -c config.yml
+```
+
+```text
+是这样的，我有一个想下载的抖音短视频，它的链接是：https://www.douyin.com/user/self?from_tab_name=main&modal_id=7653394139124706930&showTab=favorite_collection
+但是呢，这个链接是不能直接用的，你需要先把它的id提取出来，然后生成一个新的url，这个新的url的格式，你要参考config.yml的link
+等你把这个url做好之后呢，用这个新的url去替换config.yml里面的目前的url
+等你替换好之后，你运行这个命令{uv run python run.py -c config.yml}
+通常来说呢，这个命令运行完成之后，视频会下载好
+等下载好了，你去看看，这个视频有没有下载成功
+然后呢，你复制下载好的视频到/tmp文件夹，然后重命名在/tmp中的这个文件，{用户民-视频名}.mp4
+你明白了吗，你先不要做，说一下我要你做什么，看看你有没有理解。
+```
