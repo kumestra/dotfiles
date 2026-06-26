@@ -56,6 +56,7 @@ Use the topic from the user's request. If the user did not provide a topic, stop
    - LaTeX math for formulas or notation when clearer than prose
    - Link references, heading anchors, and footnotes for navigation or sourcing
    - Include a light, tasteful amount of emoji to improve readability, make the article feel relaxed, and give the Markdown a cute tone without distracting from the content. Prefer 2-5 emoji in a typical post, placed in headings, short labels, checklist items, or light callouts. Do not use emoji in frontmatter, code blocks, URLs, commit messages, or dense technical paragraphs.
+   Number Markdown headings with serial numbers after the frontmatter. Use hierarchical decimal numbering for section headings, such as `## 1. Overview`, `## 2. Design`, and `### 2.1 Tradeoffs`. Keep numbering consecutive within each heading level, and do not number the frontmatter values.
 
 7. Generate a concise filename in kebab-case from the topic, such as `auth-design.md` or `react-state-management.md`.
 
