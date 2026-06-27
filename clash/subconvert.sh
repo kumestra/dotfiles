@@ -11,7 +11,7 @@ output_file="$output_dir/clash-config-${current_date}.yml"
 if ! docker ps -a --format '{{.Names}}' | grep -Fxq subconverter; then
     echo "Docker container subconverter does not exist. Creating it."
     docker run -d --restart=always --name subconverter \
-        -p 25500:25500 tindy2013/subconverter:latest
+        -p 25500:25500 metacubex/subconverter:latest
 else
     echo "Docker container subconverter already exists."
 fi

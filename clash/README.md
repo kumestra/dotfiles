@@ -17,8 +17,10 @@ docker run \
   -d \
   --restart=always \
   -p 25500:25500 \
-  tindy2013/subconverter:latest
+  metacubex/subconverter:latest
 ```
+
+Reference: [从 tindy2013/subconverter 切换到 MetaCubeX/subconverter](https://github.com/kumestra/probable-guide/blob/secret-dairy/blog/2026/06/2026-06-27-subconverter-migration.md)
 
 ## convert
 
