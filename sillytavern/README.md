@@ -76,4 +76,6 @@ docker run \
 
 ## References
 
-[SillyTavern 角色卡格式简明指南](https://github.com/kumestra/kumestra.github.io/blob/main/src/data/blog/2026/06/2026-06-21-sillytavern-character-cards.md)
+- [SillyTavern 角色卡格式简明指南](https://github.com/kumestra/kumestra.github.io/blob/main/src/data/blog/2026/06/2026-06-21-sillytavern-character-cards.md)
+- [酒馆助手：Tavern-Helper](https://github.com/N0VI028/JS-Slash-Runner)
+- [提示词模板：SillyTavern EJS Template Extension](https://github.com/zonde306/ST-Prompt-Template/)
