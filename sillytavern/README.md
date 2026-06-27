@@ -65,6 +65,7 @@ Rules:
 ```bash
 docker run \
   --name sillytavern \
+  -d \
   -p 8000:8000 \
   -e NODE_ENV=production \
   -e FORCE_COLOR=1 \
