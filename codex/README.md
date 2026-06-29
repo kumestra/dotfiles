@@ -50,7 +50,7 @@ Your understanding of the task you are about to perform is correct. Now, please 
 I have approved this plan. You may proceed with its execution.
 ```
 
-### github markdown feature
+## github markdown feature
 
 [Table](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-tables)
 
@@ -69,3 +69,9 @@ I have approved this plan. You may proceed with its execution.
 [Footnote](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#footnotes)
 
 [Emoji](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#using-emojis)
+
+## 一些可以考虑写道全局 AGENTS.md 中的内容
+
+```text
+在你遇到沙箱阻碍的时候，你不要直接work around。如果被阻碍的行为是合理且必要的，那么你可以向我申请权限。如果你遇到了沙箱拦截就work around，时间久了，就会产生一堆技术债。
+```
