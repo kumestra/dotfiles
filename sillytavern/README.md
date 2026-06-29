@@ -66,7 +66,7 @@ Rules:
 docker run \
   --name sillytavern \
   -d \
-  -p 8080:8000 \
+  -p 8003:8000 \
   -e NODE_ENV=production \
   -e FORCE_COLOR=1 \
   -e SILLYTAVERN_HEARTBEATINTERVAL=30 \
