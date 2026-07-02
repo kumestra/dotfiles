@@ -62,7 +62,7 @@ Use the topic from the user's request. If the user did not provide a topic, stop
 
 8. Write the post to:
    ```text
-   /home/t/git-repos/probable-guide/blog/<YYYY>/<MM>/<YYYY-MM-DD>-<filename>.md
+   /home/test-user/git-repos/probable-guide/blog/<YYYY>/<MM>/<YYYY-MM-DD>-<filename>.md
    ```
    Create the year and month directories if needed. If the filename already exists, append a version suffix such as `-v2`.
 
