@@ -169,3 +169,13 @@ git commit签名：先按照 [Generating a new GPG key](https://docs.github.com/
 ```bash
 sudo apt install -y curl
 ```
+
+### Install Docker
+
+### Install Maple Font
+
+### dotfiles
+
+### nvm
+
+### uv
