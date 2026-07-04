@@ -28,6 +28,12 @@ Install bubblewrap
 sudo apt install -y bubblewrap
 ```
 
+Verify install success:
+
+```bash
+bwrap --version
+```
+
 ## skill
 
 ### Install skill
