@@ -186,5 +186,12 @@ sudo apt install -y curl
 
 ### tmux session
 
-### bubblewrap(codex)
+### VS Code (dotfiles repo)
 
+### bubblewrap
+
+### codex install
+
+### codex skill
+
+### probable guide repo
