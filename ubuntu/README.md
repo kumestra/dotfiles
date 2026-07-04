@@ -179,3 +179,12 @@ sudo apt install -y curl
 ### nvm
 
 ### uv
+
+### Task snapshot
+
+## After snapshot
+
+### tmux session
+
+### bubblewrap(codex)
+
