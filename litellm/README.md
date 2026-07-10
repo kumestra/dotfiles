@@ -31,7 +31,7 @@ docker rm -f litellm
 ## test
 
 ```bash
-curl -X POST 'http://192.168.1.156:4000/chat/completions' \
+curl -X POST 'http://192.168.1.157:4000/chat/completions' \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer sk-1234' \
   --data-binary @- <<'JSON'
