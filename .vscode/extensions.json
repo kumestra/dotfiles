@@ -2,10 +2,11 @@
   "recommendations": [
     "eamodio.gitlens",
     "ritwickdey.LiveServer",
+    "tamasfe.even-better-toml",
     "bierner.markdown-footnotes",
     "bierner.markdown-emoji",
     "bierner.markdown-checkbox",
-    "ms-python.python"
+    "ms-python.python",
   ],
   "unwantedRecommendations": []
 }
