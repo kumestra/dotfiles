@@ -9,6 +9,7 @@ docker pull docker.litellm.ai/berriai/litellm:main-latest
 ```bash
 docker run \
     --name litellm \
+    -d \
     -v $(pwd)/config.yaml:/app/config.yaml \
     -e OPEN_ROUTER_API_KEY="sk-****" \
     -e LANGFUSE_HOST="https://cloud.langfuse.com" \
