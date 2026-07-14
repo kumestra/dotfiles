@@ -1,0 +1,49 @@
+{
+    // Editor typography.
+    "editor.fontSize": 19,
+    "editor.lineHeight": 1.5,
+    "editor.fontFamily": "Maple Mono NL NF CN,JetBrainsMono Nerd Font Mono, Consolas, 'Courier New', monospace",
+
+    // Workbench appearance and editor tabs.
+    "workbench.colorTheme": "Dark Modern",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.editor.wrapTabs": true,
+
+    // Integrated terminal.
+    "terminal.integrated.initialHint": false,
+    "terminal.integrated.fontSize": 19,
+
+    // Files, Git, and workspace trust behavior.
+    "files.autoSave": "onFocusChange",
+    "git.confirmSync": false,
+    "security.workspace.trust.untrustedFiles": "open",
+
+    // Update and window restore behavior.
+    "update.mode": "none",
+    "update.showReleaseNotes": false,
+    "window.restoreWindows": "none",
+
+    // Disable built-in VS Code AI chat features.
+    "chat.disableAIFeatures": true,
+
+    // Remote SSH host platform hints.
+    "remote.SSH.remotePlatform": {
+        "192.168.1.156": "linux",
+        "192.168.1.157": "linux"
+    },
+
+    // Language-specific rulers.
+    "[shellscript]": {
+        "editor.rulers": [80]
+    },
+    "[python]": {
+        "editor.rulers": [80]
+    },
+
+    // Chat UI typography.
+    "chat.fontSize": 22,
+    "chat.editor.fontSize": 22,
+
+    // Markdown preview typography.
+    "markdown.preview.fontSize": 22
+}
