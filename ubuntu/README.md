@@ -184,6 +184,10 @@ sudo apt install -y curl
 
 ## After snapshot
 
+### update code
+
+### gh command line tool
+
 ### tmux session
 
 ### VS Code (dotfiles repo)
