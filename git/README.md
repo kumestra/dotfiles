@@ -1,6 +1,22 @@
 
 Extract a sub-folder of a git repo into a standalone repo.
 
+Verify the installation:
+
+```bash
+git filter-repo --version
+```
+
+Install git-filter-repo:
+
+```bash
+sudo apt update
+```
+
+```bash
+sudo apt install git-filter-repo
+```
+
 Clone the origin repo:
 
 ```bash
