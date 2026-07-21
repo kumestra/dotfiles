@@ -44,5 +44,5 @@ git remote add origin git@github.com:USERNAME/folder-abc.git
 ```
 
 ```bash
-git push -f
+git push --set-upstream origin main -f
 ```
