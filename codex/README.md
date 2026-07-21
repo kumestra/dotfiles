@@ -42,7 +42,7 @@ bwrap --version
 Please complete the following tasks:
 
 1. Locate the `codex/skills` directory in the root of the current Git repository and read all files within that directory.
-2. Analyze and determine where Skills must be placed for Codex to use them.
+2. Analyze and determine where Skills must be placed for Codex to use them globally.
 3. Create symbolic links (symlinks) for all Skills in the `codex/skills` directory so that Codex can use them properly.
 
 Before performing any actions, first restate your understanding of the task. Do not begin execution until I confirm that your understanding is correct.
