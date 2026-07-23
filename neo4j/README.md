@@ -5,6 +5,6 @@ docker run \
     -d \
     -p 7474:7474 \
     -p 7687:7687 \
-    -e NEO4J_AUTH=neo4j/123456 \
+    -e NEO4J_AUTH=neo4j/12345678 \
     neo4j:2026.06.0
 ```
