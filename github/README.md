@@ -16,3 +16,9 @@ Init repo (Python):
 ```bash
 uv init . --package --vcs none --no-readme --python 3.12
 ```
+
+Fork a repo:
+
+```bash
+gh repo fork OWNER/REPO --clone
+```
