@@ -1,12 +1,26 @@
 
 Create a new repo:
 
+Python
+
 ```bash
 gh repo create project-name \
   --public \
   --description "Description here." \
   --add-readme \
   --gitignore Python \
+  --license AGPL-3.0 \
+  --clone
+```
+
+前端
+
+```bash
+gh repo create project-name \
+  --public \
+  --description "Description here." \
+  --add-readme \
+  --gitignore Node \
   --license AGPL-3.0 \
   --clone
 ```
