@@ -7,7 +7,7 @@ docker run \
    -d \
    -p 8002:8080 \
    -e OPENAI_API_BASE_URL="https://openrouter.ai/api/v1" \
-   -e OPENAI_API_KEY="sk-1234" \
+   -e OPENAI_API_KEY="sk-replace-me" \
    ghcr.nju.edu.cn/open-webui/open-webui:main
 ```
 
