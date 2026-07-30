@@ -199,3 +199,5 @@ sudo apt install -y curl
 ### codex skill
 
 ### probable guide repo
+
+### chrome and browser use (optional)
