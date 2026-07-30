@@ -11,6 +11,8 @@ docker run \
    ghcr.nju.edu.cn/open-webui/open-webui:main
 ```
 
+`ghcr.nju.edu.cn` 是南京大学提供的 GitHub Container Registry（`ghcr.io`）缓存代理/加速镜像。
+
 Name: `Tmp User`
 
 Email: `tmp@tmp.com`
