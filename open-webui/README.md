@@ -11,13 +11,31 @@ docker run \
    ghcr.nju.edu.cn/open-webui/open-webui:main
 ```
 
+查看日志，按 `Ctrl + C` 退出：
+
+```bash
+docker logs -f --tail 100 open-webui
+```
+
 `ghcr.nju.edu.cn` 是南京大学提供的 GitHub Container Registry（`ghcr.io`）缓存代理/加速镜像。
 
-Name: `Tmp User`
+Name: 
 
-Email: `tmp@tmp.com`
+```text
+Tmp User
+```
 
-Password: `tmp123456`
+Email:
+
+```text 
+tmp@tmp.com
+```
+
+Password: 
+
+```text
+tmp123456
+```
 
 1 setting `Follow-Up Auto-Generation`
 
