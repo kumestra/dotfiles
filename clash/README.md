@@ -25,7 +25,7 @@ Reference: [从 tindy2013/subconverter 切换到 MetaCubeX/subconverter](https:/
 ## convert
 
 ```bash
-curl --silent --show-error --output "tmp-clash-config.yml" --get \
+curl --silent --show-error --output "tmp.yml" --get \
     "http://127.0.0.1:25500/sub" \
     --data-urlencode "target=clash" \
     --data-urlencode "url=http://192.168.1.157:8001/tmp.txt" \
