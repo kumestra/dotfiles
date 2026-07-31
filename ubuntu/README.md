@@ -184,6 +184,8 @@ sudo apt install -y curl
 
 ## After snapshot
 
+### memory 8gb (optional https://chatgpt.com/c/6a6c3588-bed0-83ea-9c38-86a1ad3aa4a2)
+
 ### update code
 
 ### gh command line tool
