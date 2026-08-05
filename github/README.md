@@ -4,12 +4,11 @@ Create a new repo:
 Python
 
 ```bash
-gh repo create project-name \
-  --public \
-  --description "Description here." \
+gh repo create tmp-project-name \
+  --private \
+  --description "tmp" \
   --add-readme \
   --gitignore Python \
-  --license AGPL-3.0 \
   --clone
 ```
 
