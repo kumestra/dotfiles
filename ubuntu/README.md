@@ -205,3 +205,9 @@ sudo apt install -y curl
 ### probable guide repo
 
 ### browser use (optional)
+
+### 禁用响铃(optional)
+
+```bash
+echo 'set bell-style none' >> ~/.inputrc
+```
