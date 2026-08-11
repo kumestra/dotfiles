@@ -45,5 +45,7 @@
     "chat.editor.fontSize": 22,
 
     // Markdown preview typography.
-    "markdown.preview.fontSize": 22
+    "markdown.preview.fontSize": 22,
+
+    "accessibility.signalOptions.volume": 0
 }
