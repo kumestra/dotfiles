@@ -36,3 +36,7 @@ Rescue USB → Disk Image → 新 SSD → 再走上面的启动链
 > **请用普通用户能理解的方式，依次讲清 UEFI、GPT、EFI、BitLocker/TPM/Recovery Key、Disk Image、Rescue USB/Restore，以及它们在 Windows 整盘备份和恢复中的关系。不要扩展到维修级概念。**
 
 这才是合适的学习范围。
+
+[UEFI Explained: The Firmware That Starts Your Computer](https://github.com/kumestra/probable-guide/blob/main/blog/2026/08/2026-08-14-uefi-explained.md)
+
+[GPT: How a Disk Stores Partitions and Starts an Operating System](https://github.com/kumestra/probable-guide/blob/main/blog/2026/08/2026-08-15-gpt-disk-partition-table.md)
