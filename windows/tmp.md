@@ -40,3 +40,5 @@ Rescue USB → Disk Image → 新 SSD → 再走上面的启动链
 [UEFI Explained: The Firmware That Starts Your Computer](https://github.com/kumestra/probable-guide/blob/main/blog/2026/08/2026-08-14-uefi-explained.md)
 
 [GPT: How a Disk Stores Partitions and Starts an Operating System](https://github.com/kumestra/probable-guide/blob/main/blog/2026/08/2026-08-15-gpt-disk-partition-table.md)
+
+[Understanding the EFI System Partition](https://github.com/kumestra/probable-guide/blob/main/blog/2026/08/2026-08-15-efi-system-partition.md)
