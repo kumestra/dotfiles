@@ -42,3 +42,5 @@ Rescue USB → Disk Image → 新 SSD → 再走上面的启动链
 [GPT: How a Disk Stores Partitions and Starts an Operating System](https://github.com/kumestra/probable-guide/blob/main/blog/2026/08/2026-08-15-gpt-disk-partition-table.md)
 
 [Understanding the EFI System Partition](https://github.com/kumestra/probable-guide/blob/main/blog/2026/08/2026-08-15-efi-system-partition.md)
+
+[TPM 与 BitLocker：Windows 启动时如何解锁加密磁盘](https://github.com/kumestra/probable-guide/blob/main/blog/2026/08/2026-08-17-tpm-and-bitlocker.md)
