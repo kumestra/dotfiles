@@ -39,12 +39,12 @@ curl --silent --show-error --output "tmp.yml" --get \
 docker rm -f subconverter
 ```
 
-## 美国优惠节点
+## 美国优惠节点(可选)
 
 在 `tmp.ini` 的区域节点分组附近新增：
 
 ```ini
-custom_proxy_group=🇺🇲 美国优惠节点`url-test`(美国.*(0\.1x|0\.01x))`http://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=🇺🇲 美国优惠节点`url-test`(美国.*(0\.1x|0\.01x))`http://www.gstatic.com/generate_204`64,,512
 ```
 
 其中用于筛选节点名的正则表达式是 `美国.*(0\.1x|0\.01x)`：
