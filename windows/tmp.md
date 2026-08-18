@@ -44,3 +44,5 @@ Rescue USB → Disk Image → 新 SSD → 再走上面的启动链
 [Understanding the EFI System Partition](https://github.com/kumestra/probable-guide/blob/main/blog/2026/08/2026-08-15-efi-system-partition.md)
 
 [TPM 与 BitLocker：Windows 启动时如何解锁加密磁盘](https://github.com/kumestra/probable-guide/blob/main/blog/2026/08/2026-08-17-tpm-and-bitlocker.md)
+
+[Windows 11 系统镜像备份：保持 BitLocker 启用的恢复方案](https://github.com/kumestra/probable-guide/blob/main/blog/2026/08/2026-08-18-windows-11-bitlocker-system-image-backup.md)
