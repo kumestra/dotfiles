@@ -46,3 +46,5 @@ Rescue USB → Disk Image → 新 SSD → 再走上面的启动链
 [TPM 与 BitLocker：Windows 启动时如何解锁加密磁盘](https://github.com/kumestra/probable-guide/blob/main/blog/2026/08/2026-08-17-tpm-and-bitlocker.md)
 
 [Windows 11 系统镜像备份：保持 BitLocker 启用的恢复方案](https://github.com/kumestra/probable-guide/blob/main/blog/2026/08/2026-08-18-windows-11-bitlocker-system-image-backup.md)
+
+[Windows 备份软件比较与整机备份操作指南](https://github.com/kumestra/probable-guide/blob/main/blog/2026/08/2026-08-18-windows-backup-software-and-full-system-backup.md)
