@@ -48,3 +48,5 @@ Rescue USB → Disk Image → 新 SSD → 再走上面的启动链
 [Windows 11 系统镜像备份：保持 BitLocker 启用的恢复方案](https://github.com/kumestra/probable-guide/blob/main/blog/2026/08/2026-08-18-windows-11-bitlocker-system-image-backup.md)
 
 [Windows 备份软件比较与整机备份操作指南](https://github.com/kumestra/probable-guide/blob/main/blog/2026/08/2026-08-18-windows-backup-software-and-full-system-backup.md)
+
+[移动固态硬盘怎么选：别被接口、品牌和峰值速度带偏](https://github.com/kumestra/probable-guide/blob/main/blog/2026/08/2026-08-20-mobile-ssd-buying-guide.md)
