@@ -186,7 +186,7 @@ sudo apt install -y curl
 
 ### memory 8gb (optional https://chatgpt.com/c/6a6c3588-bed0-83ea-9c38-86a1ad3aa4a2)
 
-### ssh key
+### ssh key (optional)
 
 ```powershell
 type $env:USERPROFILE\.ssh\id_ed25519.pub | ssh root@192.168.1.100 "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
