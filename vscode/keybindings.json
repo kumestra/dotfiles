@@ -2,6 +2,7 @@
 
 [
     {
+        // Reference: https://chatgpt.com/c/6a9eb484-ead0-83ea-9dd4-fd0df448b8ae
         "key": "shift+enter",
         "command": "-python.execSelectionInTerminal"
     }
