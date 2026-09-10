@@ -6,6 +6,7 @@
     "bierner.markdown-footnotes",
     "bierner.markdown-emoji",
     "bierner.markdown-checkbox",
+    "bierner.markdown-preview-github-styles",
     "ms-python.python",
   ],
   "unwantedRecommendations": []
