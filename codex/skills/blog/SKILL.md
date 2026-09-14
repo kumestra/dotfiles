@@ -1,6 +1,6 @@
 ---
 name: blog
-description: Use when the user asks to turn knowledge from the current conversation into a blog post or article by topic, with privacy filtering, structured Markdown output, frontmatter, a dated file path in the configured blog repository, and publishing via git commit and push.
+description: Use when the user asks to turn knowledge from the current conversation into a blog post or article by topic, with privacy filtering, structured Markdown output, frontmatter, and a dated file path in the configured blog repository.
 ---
 
 # Blog Post From Conversation
@@ -66,4 +66,4 @@ Use the topic from the user's request. If the user did not provide a topic, stop
    ```
    Create the year and month directories if needed. If the filename already exists, append a version suffix such as `-v2`.
 
-9. If sandbox permissions block writing to the blog repository, request approval to write the specific target file or directory. Do not write to a different location unless the user asks.
+9. If sandbox permissions block writing to the blog repository, request approval to write the specific target file or directory. Do not write to a different location unless the user asks. The workflow ends after the post is written.
