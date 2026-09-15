@@ -15,12 +15,11 @@ gh repo create tmp-project-name \
 ### 前端
 
 ```bash
-gh repo create project-name \
-  --public \
-  --description "Description here." \
+gh repo create tmp-project-name \
+  --private \
+  --description "tmp" \
   --add-readme \
   --gitignore Node \
-  --license AGPL-3.0 \
   --clone
 ```
 
