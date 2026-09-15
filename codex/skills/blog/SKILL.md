@@ -66,4 +66,10 @@ Use the topic from the user's request. If the user did not provide a topic, stop
    ```
    Create the year and month directories if needed. If the filename already exists, append a version suffix such as `-v2`.
 
-9. If sandbox permissions block writing to the blog repository, request approval to write the specific target file or directory. Do not write to a different location unless the user asks. The workflow ends after the post is written.
+9. If sandbox permissions block writing to the blog repository, request approval to write the specific target file or directory. Do not write to a different location unless the user asks.
+
+10. After writing the post, run Git commands in `/home/test-user/git-repos/probable-guide`:
+    - Stage the generated file with `git add -- <post-path>`.
+    - Commit only that file with `git commit --only -m "docs: add <topic> blog post" -- <post-path>`, preserving unrelated staged changes.
+    - Push the current branch to its configured upstream with `git push`.
+    Use the actual repository-relative post path and topic. If a command fails or the upstream is missing, stop and report the blocker. The workflow ends after the push succeeds; report the post path and commit hash.
