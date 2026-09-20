@@ -23,6 +23,17 @@ gh repo create tmp-project-name \
   --clone
 ```
 
+### Java
+
+```bash
+gh repo create tmp-project-name \
+  --private \
+  --description "tmp" \
+  --add-readme \
+  --gitignore Java \
+  --clone
+```
+
 ## Init
 
 ### Init repo (Python):
