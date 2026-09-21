@@ -219,3 +219,17 @@ type $env:USERPROFILE\.ssh\id_ed25519.pub | ssh root@192.168.1.100 "mkdir -p ~/.
 ```bash
 echo 'set bell-style none' >> ~/.inputrc
 ```
+
+## GUI
+
+Stop GUI:
+
+```bash
+sudo systemctl stop display-manager
+```
+
+Start GUI:
+
+```bash
+sudo systemctl start display-manager
+```
