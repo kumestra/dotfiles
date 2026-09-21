@@ -1,12 +1,14 @@
-# Ubuntu Environment Setup
+# Ubuntu
 
-## Ubuntu Desktop
+## Ubuntu Environment Setup
 
-### Static IP
+### Ubuntu Desktop
+
+#### Static IP
 
 配置路由器，让它在遇到虚拟机的 MAC 地址时，给虚拟机分配固定的 IP 地址，虚拟机依然采用 DHCP（意思就是这一步不需要配置虚拟机，配置路由器就行）。
 
-### OpenSSH Server
+#### OpenSSH Server
 
 ```bash
 sudo apt update
@@ -28,13 +30,13 @@ systemctl status ssh
 ssh test-user@192.168.1.157
 ```
 
-### Upload Public Key to VM
+#### Upload Public Key to VM
 
 ```powershell
 Get-Content C:\Users\hongz\.ssh\id_ed25519.pub | ssh test-user@192.168.1.157 "mkdir -p ~/.ssh && chmod 700 ~/.ssh && cat >> ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys"
 ```
 
-### Config APT Mirror
+#### Config APT Mirror
 
 backup
 
@@ -62,7 +64,7 @@ refresh
 sudo apt update
 ```
 
-### Install Vim
+#### Install Vim
 
 ```bash
 sudo apt install -y vim
@@ -71,7 +73,7 @@ sudo apt install -y vim
 echo -e 'export VISUAL="vim"\nexport EDITOR="vim"' >> ~/.bashrc
 ```
 
-### Config NTP Server
+#### Config NTP Server
 
 ```bash
 sudo sed -i 's/^#NTP=.*/NTP=ntp.aliyun.com ntp.tencent.com ntp.ntsc.ac.cn/' /etc/systemd/timesyncd.conf
@@ -95,7 +97,7 @@ timedatectl timesync-status
 journalctl -u systemd-timesyncd --no-pager -n 10
 ```
 
-### Install Tmux
+#### Install Tmux
 
 ```bash
 sudo apt install -y tmux
@@ -162,57 +164,57 @@ Host github.com
 
 git commit签名：先按照 [Generating a new GPG key](https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key) 生成GPG key，然后按照 [Adding a GPG key to your GitHub account](https://docs.github.com/en/authentication/managing-commit-signature-verification/adding-a-gpg-key-to-your-github-account) 操作把公钥添加到Github账户，然后参考 [Telling Git about your signing key](https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key) 告诉Git使用GPG key。不用参考 [Associating an email with your GPG key](https://docs.github.com/en/authentication/managing-commit-signature-verification/associating-an-email-with-your-gpg-key) ，因为在key创建的时候已经关联了Github Email。
 
-### Turn off Screen Blank(解决一段时间不操作黑屏问题)
+#### Turn off Screen Blank(解决一段时间不操作黑屏问题)
 
-### 安装curl
+#### 安装curl
 
 ```bash
 sudo apt install -y curl
 ```
 
-### Install Docker
+#### Install Docker
 
-### Install Maple Font
+#### Install Maple Font
 
-### dotfiles
+#### dotfiles
 
-### nvm
+#### nvm
 
-### uv
+#### uv
 
-### Task snapshot
+#### Task snapshot
 
-## After snapshot
+### After snapshot
 
-### memory 8gb (optional https://chatgpt.com/c/6a6c3588-bed0-83ea-9c38-86a1ad3aa4a2)
+#### memory 8gb (optional https://chatgpt.com/c/6a6c3588-bed0-83ea-9c38-86a1ad3aa4a2)
 
-### ssh key (optional)
+#### ssh key (optional)
 
 ```powershell
 type $env:USERPROFILE\.ssh\id_ed25519.pub | ssh root@192.168.1.100 "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
 ```
 
-### chrome (optional)
+#### chrome (optional)
 
-### update code
+#### update code
 
-### gh command line tool
+#### gh command line tool
 
-### tmux session
+#### tmux session
 
-### VS Code (dotfiles repo)
+#### VS Code (dotfiles repo)
 
-### bubblewrap
+#### bubblewrap
 
-### codex install
+#### codex install
 
-### codex skill
+#### codex skill
 
-### probable guide repo
+#### probable guide repo
 
-### browser use (optional)
+#### browser use (optional)
 
-### 禁用响铃(optional)
+#### 禁用响铃(optional)
 
 ```bash
 echo 'set bell-style none' >> ~/.inputrc
