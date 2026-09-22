@@ -69,19 +69,19 @@ Ship the current git working tree as one Conventional Commit and push it to the 
 
 10. Report in exactly this table format:
 
-| Field | Value |
-|---|---|
-| **Commit** | short hash (full hash) |
-| **Branch** | branch name |
-| **When** | UTC: `Sunday, April 19, 2026 at 2:30 PM`; Beijing: `Sunday, April 19, 2026 at 10:30 PM` |
-| **Author** | author name |
-| **Email** | author email |
-| **Message** | commit subject line only |
-| **Changed** | N files; +X -Y |
-| **Files** | list of changed filenames |
-| **Link** | full GitHub commit URL |
+    | Field | Value |
+    |---|---|
+    | **Commit** | short hash (full hash) |
+    | **Branch** | branch name |
+    | **When** | UTC: `Sunday, April 19, 2026 at 2:30 PM`; Beijing: `Sunday, April 19, 2026 at 10:30 PM` |
+    | **Author** | author name |
+    | **Email** | author email |
+    | **Message** | commit subject line only |
+    | **Changed** | N files; +X -Y |
+    | **Files** | list of changed filenames |
+    | **Link** | full GitHub commit URL |
 
-Then print the full commit message as a fenced code block.
+    Then print the full commit message as a fenced code block.
 
 11. If the commit includes any `.md` files, print a markdown bullet list below the code block where each item is the plain URL string pointing to that file at the committed SHA on GitHub.
 
