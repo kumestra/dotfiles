@@ -85,12 +85,12 @@ Ship the current git working tree as one Conventional Commit and push it to the 
 
 11. If the commit includes any `.md` files, print a markdown bullet list below the code block where each item is the plain URL string pointing to that file at the committed SHA on GitHub.
 
-   Use this permalink form:
-   ```text
-   https://github.com/<owner>/<repo>/blob/<full-sha>/<path>
-   ```
+    Use this permalink form:
+    ```text
+    https://github.com/<owner>/<repo>/blob/<full-sha>/<path>
+    ```
 
-   Construct the URL from the same remote used for the commit link. Use the full commit hash, never `blob/main`. For renames, use the post-commit path from `git show --name-only`. If no `.md` files are in the commit, omit this section.
+    Construct the URL from the same remote used for the commit link. Use the full commit hash, never `blob/main`. For renames, use the post-commit path from `git show --name-only`. If no `.md` files are in the commit, omit this section.
 
 ## GitHub URL Rules
 
