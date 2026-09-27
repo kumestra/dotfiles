@@ -28,4 +28,4 @@ while IFS= read -r line; do
     esac
 done <<< "$status"
 
-printf 'unstaged:%d staged:%d\n' "$unstaged" "$staged"
+printf '📝 unstaged:%d 📦 staged:%d\n' "$unstaged" "$staged"
